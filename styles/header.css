@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right ul {
+  display: flex;
+  gap: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+header .left h3 {
+  font-size: 35px;
+  color: #ff6a3d;
+}
