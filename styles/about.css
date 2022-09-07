@@ -27,10 +27,15 @@
   .about {
     justify-content: center;
     gap: 80px;
+    max-width: 210px;
+    padding: unset;
+    margin: 0 auto;
   }
+
   .about .left {
-    flex-basis: 100%;
     display: flex;
+    flex-basis: 100%;
+
     justify-content: center;
     order: 2;
   }
@@ -42,6 +47,6 @@
     text-align: center;
   }
   .about .left img {
-    height: 180px;
+    height: 250px;
   }
 }
