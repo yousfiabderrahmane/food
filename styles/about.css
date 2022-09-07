@@ -28,7 +28,8 @@
     justify-content: center;
     gap: 40px;
     /* max-width: 210px; */
-    padding: unset;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
   }
 
