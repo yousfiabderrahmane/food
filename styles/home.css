@@ -80,14 +80,14 @@
 @media (max-width: 1010px) {
   .home {
     justify-content: space-evenly;
-    gap: 80px;
+    gap: 40px;
   }
   .home h1 {
     font-size: 50px;
   }
   .home h2 {
     font-size: 35px;
-    margin: 70px 0;
+    margin: 20px 0;
   }
   .home-text {
     padding-left: 0;

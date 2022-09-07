@@ -56,5 +56,12 @@ ul a:hover {
   }
   .header {
     justify-content: center;
+    top: 0px;
+    padding: unset;
+    padding: 10px 0;
+  }
+  .header .left {
+    display: flex;
+    align-items: center;
   }
 }

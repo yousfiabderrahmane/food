@@ -26,8 +26,8 @@
 @media (max-width: 1010px) {
   .about {
     justify-content: center;
-    gap: 80px;
-    max-width: 210px;
+    gap: 40px;
+    /* max-width: 210px; */
     padding: unset;
     margin: 0 auto;
   }
@@ -42,9 +42,10 @@
   .about .right {
     flex-basis: 100%;
     display: flex;
-    max-width: 200px;
+    max-width: 400px;
     flex-direction: column;
     text-align: center;
+    margin-top: 60px;
   }
   .about .left img {
     height: 250px;

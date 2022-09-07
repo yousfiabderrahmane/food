@@ -82,10 +82,13 @@
 }
 @media (max-width: 710px) {
   .menu .bot .card {
-    flex-basis: 100%;
+    flex-basis: 77%;
   }
   .card:hover {
-    transform: translateY(-20px);
+    transform: unset;
+  }
+  .menu .bot {
+    margin-top: 40px;
   }
   .cart {
     width: 20px;

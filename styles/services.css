@@ -48,9 +48,13 @@
 @media (max-width: 1010px) {
   .services .bot {
     justify-content: center;
+    margin-top: 10px;
   }
   .services-card {
     flex-basis: 100%;
     padding: unset;
+  }
+  .services h4 {
+    margin-bottom: unset;
   }
 }
