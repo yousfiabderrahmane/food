@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  top: -49px;
+  top: 0px;
   right: 0;
   left: 0;
   display: flex;
@@ -8,9 +8,14 @@
   align-items: center;
   background-color: #1a2238;
   padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 4px solid #fff;
   z-index: 9;
 }
 .hamburger {
+  display: none;
+}
+.hamburger2 {
   display: none;
 }
 .header h3 {
@@ -55,27 +60,34 @@ ul a:hover {
 }
 .active {
   border-bottom: 2px dashed #ff6a3d;
-  color: #ff6a3d;
 }
 @media (max-width: 1010px) {
   .sideNav {
+    left: 0;
     position: fixed;
     height: 100vh;
-    width: 50vw;
-    background-color: red;
+    width: 100vw;
+    background-color: #ff6a3d;
     right: 0;
+    margin-top: 13.5px;
+    transform: translateX(-100%);
   }
   .right ul {
     display: flex;
     flex-direction: column;
     background-color: transparent;
     position: fixed;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     height: 100%;
-    gap: 20px;
-    font-size: 30px;
+    gap: 90px;
+    font-size: 40px;
+    margin-left: 20%;
+  }
+  .right ul li {
+    border-left: 4px solid white;
+    padding-left: 20px;
   }
   .header {
     justify-content: space-around;
@@ -90,5 +102,9 @@ ul a:hover {
   .hamburger {
     z-index: 999999;
     display: inline-block;
+  }
+  .hamburger2 {
+    display: none;
+    transform: rotateZ(90deg);
   }
 }

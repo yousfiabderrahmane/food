@@ -32,3 +32,23 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+//event listeners
+const hamburgerBtn = document.getElementById("hamburger");
+const hamburgerBtn2 = document.getElementById("hamburger2");
+const sideNav = document.getElementById("sideNav");
+const listItems = document.querySelectorAll(".sideNav ul li");
+hamburgerBtn.addEventListener("click", () => {
+  sideNav.style.transform = "translateX(0)";
+  hamburgerBtn.style.display = "none";
+  hamburgerBtn2.style.display = "inline-block";
+});
+hamburgerBtn2.addEventListener("click", () => {
+  sideNav.style.transform = "translateX(-100%)";
+  hamburgerBtn2.style.display = "none";
+  hamburgerBtn.style.display = "inline-block";
+});
+sideNav.addEventListener("click", () => {
+  sideNav.style.transform = "translateX(-100%)";
+  hamburgerBtn2.style.display = "none";
+  hamburgerBtn.style.display = "inline-block";
+});
