@@ -18,6 +18,11 @@ window.addEventListener("scroll", () => {
         button.style.animation = "slide 1s linear forwards";
       }
     }
+    if (pageYOffset <= sectionTop) {
+      setTimeout(() => {
+        section.classList.remove("show");
+      }, 100);
+    }
   });
 
   navLi.forEach((li) => {
