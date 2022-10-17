@@ -98,6 +98,7 @@ body {
     opacity: 1;
   }
 }
+
 .arrow-top:hover {
   transform: scale(1.1);
 }

@@ -45,8 +45,11 @@ header .left h3 {
   color: #ff6a3d;
 }
 ul a {
-  border: 2px solid transparent;
   transition: all 0.5s;
+  border: 2px solid transparent;
+}
+ul a:hover {
+  color: #ff6a3d;
 }
 .active {
   border-bottom: 2px dashed #ff6a3d;

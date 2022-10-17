@@ -45,6 +45,8 @@
 }
 @media (max-width: 1010px) {
   .pre-footer {
-    border-radius: unset;
+    width: 60%;
+    border-radius: 21px;
+    padding: 25px 47px;
   }
 }
