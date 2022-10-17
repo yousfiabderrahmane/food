@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
   </head>
   <body>
     <!--header-->
@@ -27,11 +31,11 @@
       <div class="left"><h3>Foods</h3></div>
       <div class="right">
         <ul>
-          <a href="#home"><li>Home</li></a>
-          <a href="#about"><li>About</li></a>
-          <a href="#menu"><li>Menu</li></a>
-          <a href="#services"><li>Service</li></a>
-          <a href="#footer"><li>Contact</li></a>
+          <a href="#home"><li class="homez active">Home</li></a>
+          <a href="#about"><li class="aboutz">About</li></a>
+          <a href="#menu"><li class="menuz">Menu</li></a>
+          <a href="#services"><li class="servicesz">Service</li></a>
+          <a href="#footer"><li class="pre-footerz">Contact</li></a>
         </ul>
       </div>
     </header>
@@ -49,7 +53,7 @@
       </div>
     </section>
     <!--about-->
-    <section id="about" class="about container">
+    <section id="about" class="about container bazar">
       <div class="left"><img src="/img/about.png" alt="" /></div>
       <div class="right">
         <h4>About Us</h4>
@@ -63,7 +67,7 @@
       </div>
     </section>
     <!--menu-->
-    <section id="menu" class="menu container">
+    <section id="menu" class="menu container bazar">
       <div class="top">
         <h4>Food Menu</h4>
         <h1>Fresh taste and great prices</h1>
@@ -375,7 +379,7 @@
       </div>
     </section>
     <!--services-->
-    <section id="services" class="services container">
+    <section id="services" class="services container bazar">
       <div class="top">
         <h4>Services</h4>
         <h1>We Provide Best Quality Food</h1>
@@ -653,5 +657,8 @@
         </div>
       </div>
     </footer>
+    <a href="#home"><button id="btn" class="arrow-top">⬆</button></a>
+
+    <script src="main.js"></script>
   </body>
 </html>

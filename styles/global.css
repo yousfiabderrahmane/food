@@ -4,6 +4,7 @@
   color: #ff6a3d;
   color: #f4db7d;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -65,7 +66,54 @@ body {
 .cmn-btn:hover::before {
   transform: scaleX(1);
 }
+.arrow-top {
+  position: fixed;
+
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  background-color: #ff6a3d;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@keyframes slide {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+  33% {
+    top: 25%;
+    opacity: 0.2;
+  }
+  66% {
+    top: 60%;
+    opacity: 0.4;
+  }
+  100% {
+    top: 90%;
+    opacity: 1;
+  }
+}
+.arrow-top:hover {
+  transform: scale(1.1);
+}
+section {
+  transition: all 0.6s;
+  filter: brightness(50%);
+}
+
+.show {
+  filter: brightness(100%);
+  transform: translateX(0%);
+}
 @media (max-width: 1010px) {
+  section #home {
+    opacity: 1;
+  }
   h1 {
     font-size: 35px;
   }
@@ -93,5 +141,41 @@ body {
 
   h4 {
     margin-bottom: 20px;
+  }
+  section {
+    transition: all 0.4s;
+    filter: brightness(50%);
+  }
+  .arrow-top {
+    position: fixed;
+    bottom: 10px;
+    right: -200px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: #9daaf2;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      right: -200px;
+    }
+    33% {
+      opacity: 0.2;
+      right: -100px;
+    }
+    66% {
+      opacity: 0.4;
+      right: -50px;
+    }
+    100% {
+      opacity: 1;
+      right: 10px;
+    }
   }
 }
