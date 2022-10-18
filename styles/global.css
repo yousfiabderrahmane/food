@@ -111,6 +111,13 @@ section {
   filter: brightness(100%);
   transform: translateX(0%);
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #ff6a3d);
+  border-radius: 4px;
+}
 @media (max-width: 1010px) {
   section #home {
     opacity: 1;

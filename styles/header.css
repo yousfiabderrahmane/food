@@ -21,7 +21,7 @@
   position: absolute;
   width: 0%;
   height: 4px;
-  background: linear-gradient(to right, #ff6a3d, rgb(228, 136, 6));
+  background: #ff6a3d;
 }
 .hamburger {
   display: none;
