@@ -9,7 +9,7 @@
   background-color: #1a2238;
   padding-bottom: 30px;
   padding-top: 30px;
-  border-bottom: 4px solid #fff;
+  border-bottom: 3px solid #fff;
   z-index: 9;
 }
 .hamburger {
@@ -70,7 +70,8 @@ ul a:hover {
     background-color: #ff6a3d;
     right: 0;
     margin-top: 13.5px;
-    transform: translateX(-100%);
+    transform: translateX(100%);
+    transition: all 0.5s;
   }
   .right ul {
     display: flex;
@@ -90,10 +91,10 @@ ul a:hover {
     padding-left: 20px;
   }
   .header {
-    justify-content: space-around;
+    justify-content: space-between;
     top: 0px;
     padding: unset;
-    padding: 10px 0;
+    padding: 10px 10px;
   }
   .header .left {
     display: flex;

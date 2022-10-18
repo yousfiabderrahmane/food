@@ -46,7 +46,7 @@ svg {
   cursor: pointer;
 }
 path {
-  transition: all 0.55s;
+  transition: all 0.3s;
 }
 .facebook path:nth-child(1),
 .insta path:nth-child(1),

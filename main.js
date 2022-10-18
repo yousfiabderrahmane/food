@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
   let current = "";
   //   console.log(pageYOffset); // how much we scrolled
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 80 - 160;
+    const sectionTop = section.offsetTop - 300;
     //calculate from top to section //160 = padding
     const sectionHeight = section.clientHeight; //section height
     if (pageYOffset >= sectionTop) {
