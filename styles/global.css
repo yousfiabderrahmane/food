@@ -118,6 +118,7 @@ section {
   background: linear-gradient(transparent, #ff6a3d);
   border-radius: 4px;
 }
+
 @media (max-width: 1010px) {
   section #home {
     opacity: 1;
