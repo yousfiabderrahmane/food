@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2238;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  z-index: 9;
+}
+.progress {
+  position: absolute;
+  width: 94%;
+  height: 2px;
+  bottom: 0;
+}
+.filled {
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background: #ff6a3d;
+}
+.hamburger {
+  display: none;
+}
+.hamburger2 {
+  display: none;
+}
+.header h3 {
+  filter: drop-shadow(0px 2px 11px #ff6a3d);
+  font-size: 20px;
+  animation: blur 1s linear infinite;
+}
+@keyframes blur {
+  0% {
+    filter: drop-shadow(0px 2px 11px #ff6a3d);
+  }
+  25% {
+    filter: drop-shadow(0px 2px 5px #ff6a3d);
+  }
+  50% {
+    filter: drop-shadow(0px 2px 11px #ff6a3d);
+  }
+  75% {
+    filter: drop-shadow(0px 2px 7px #ff6a3d);
+  }
+  100% {
+    filter: drop-shadow(0px 2px 11px #ff6a3d);
+  }
+}
+.right ul {
+  display: flex;
+  gap: 30px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+header .left h3 {
+  font-size: 35px;
+  color: #ff6a3d;
+}
+ul a {
+  transition: all 0.5s;
+  border: 2px solid transparent;
+}
+ul a:hover {
+  color: #ff6a3d;
+}
+.active {
+  border-bottom: 2px dashed #ff6a3d;
+}
+@media (max-width: 1010px) {
+  .sideNav {
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff6a3d;
+    right: 0;
+    margin-top: 13px;
+    transform: translateX(100%);
+    transition: all 0.5s;
+  }
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 90px;
+    font-size: 20px;
+    margin-left: 20%;
+  }
+  .right ul li {
+    border-left: 4px solid white;
+    padding-left: 20px;
+  }
+  .header {
+    justify-content: space-between;
+    top: 0px;
+    padding: unset;
+    padding: 10px 10px;
+  }
+  .header .left {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    z-index: 999999;
+    display: inline-block;
+  }
+  .hamburger2 {
+    display: none;
+    transform: rotateZ(90deg);
+  }
+}

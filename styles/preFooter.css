@@ -1,0 +1,52 @@
+.pre-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 226, 199);
+  border-radius: 8px;
+  padding: 50px 40px;
+}
+.pre-footer h1 {
+  font-size: 40px;
+  animation: glow 0.71s ease-in-out infinite;
+  text-shadow: #ff6a3d 2px 3px 4px;
+}
+@keyframes glow {
+  0% {
+    text-shadow: #ff6a3d 2px 3px 4px;
+  }
+  20% {
+    text-shadow: #ff6a3d 2px 3px 9px;
+  }
+  40% {
+    text-shadow: #ff6a3d 2px 3px 11px;
+  }
+  60% {
+    text-shadow: #ff6a3d 2px 3px 7px;
+  }
+  80% {
+    text-shadow: #ff6a3d 2px 3px 1px;
+  }
+  100% {
+    text-shadow: #ff6a3d 2px 3px 4px;
+  }
+}
+
+.food-container {
+  height: 90px;
+  width: 150px;
+}
+.food-tray {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1010px) {
+  .pre-footer {
+    width: 60%;
+    border-radius: 21px;
+    padding: 25px 47px;
+  }
+}
